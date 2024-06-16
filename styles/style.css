@@ -1,0 +1,675 @@
+@import url(reset.css);
+@import url(font.css);
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Dela Gothic One", sans-serif;
+    --third-family: "Oks Free", sans-serif;
+    --aktivnyy: #e32966;
+}
+
+body {
+    background: #101315;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 956px;
+}
+
+.header {
+    margin-top: 48px;
+    width: 100%;
+    height: 40px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .wrapper {
+    justify-content: flex-start;
+}
+
+.logo-link {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 94px;
+    height: 26px;
+}
+
+.nav {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 115px;
+    margin-right: auto;
+}
+
+.nav__link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu__btn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 32px;
+    padding: 8px 20px;
+}
+
+.menu__link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fff;
+}
+
+/* main section */
+.main {
+    margin-top: 186px;
+}
+
+.main .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main__header {
+    font-family: "Dela Gothic One";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 118%;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 489px;
+    margin-bottom: 16px;
+}
+
+.main__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #fff;
+    max-width: 464px;
+    margin-bottom: 24px;
+}
+
+.main__game {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fff;
+    border: 1.5px solid var(--aktivnyy);
+    border-radius: 32px;
+    padding: 12px 30px;
+}
+
+.main__game:hover {
+    box-shadow: 0 9px 26px 0 rgba(227, 41, 102, 0.3);
+    background: var(--aktivnyy);
+}
+
+.main__link {
+    display: flex;
+    gap: 31px;
+    margin-bottom: 175px;
+}
+
+.main__social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 112px;
+}
+
+/* section about */
+.about .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subheading {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 118%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 69px;
+    margin-bottom: 62px;
+}
+
+.img {
+    width: 300px;
+}
+
+.about__img {
+    width: 948px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 337px;
+}
+
+.about__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118%;
+    color: #fff;
+}
+
+/* section game__zone */
+
+.game-zone .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.game-zone__header {
+    margin-top: 94px;
+    margin-bottom: 64px;
+}
+
+.game__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game__item {
+    width: 100%;
+    max-width: 391px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(72.11% 44.18% at 50% 94%, rgb(164, 10, 121), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        ,
+        radial-gradient(45.61% 43.84% at 5% 4%, rgb(0, 141, 243), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        ,
+        radial-gradient(65.76% 60.61% at 98% 1%, rgb(220, 24, 200), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        , rgba(22, 43, 237, 0.5);
+}
+
+.game__header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 118%;
+    color: #fff;
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.game__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 22px;
+    max-width: 319px;
+}
+
+.game__btn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fff;
+    border: 1px solid var(--aktivnyy);
+    border-radius: 32px;
+    padding: 12px 30px;
+    box-shadow: 0 9px 26px 0 rgba(227, 41, 102, 0.3);
+    background: var(--aktivnyy);
+    margin-bottom: 40px;
+}
+
+/* section gaming */
+.gaming__swiper-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* gap: 60px; */
+}
+
+.gaming .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gaming__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gaming__menu {
+    width: 100%;
+    max-width: 196px;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+    align-items: flex-start;
+}
+
+.gaming__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 118%;
+    color: #fff;
+    opacity: 0.7;
+    background-image: url(../assets/icons/Arrow\2svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 32px;
+}
+
+.gaming__items:hover {
+    color: var(--aktivnyy);
+    background-image: url(../assets/icons/Arrow\1svg);
+}
+
+.main__swiper {
+    width: 100%;
+    max-width: 1078px;
+    position: relative;
+}
+
+.gaming__items_active {
+    color: var(--aktivnyy);
+    background-image: url(../assets/icons/Arrow\1svg);
+}
+
+.slider-img {
+    width: 338px;
+    height: 484px;
+}
+
+.main__swiper_btn_prev,
+.main__swiper_btn_next {
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* section prices */
+
+.prices .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.prices__header {
+    margin-top: 100px;
+    margin-bottom: 64px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 34px;
+}
+
+.table-data {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 118%;
+    color: #fff;
+    width: 321px;
+    text-align: center;
+    border: 5px solid #101315;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.span-bottom {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.span-top {
+    position: absolute;
+    left: 21px;
+    bottom: 28px;
+}
+
+.table-row {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    height: 98px;
+}
+
+.table-head .table-data {
+    background: #1f1f22;
+}
+
+.table-data {
+    background: rgba(196, 196, 196, 0.2);
+}
+
+.table-data:hover {
+    filter: brightness(5);
+}
+
+.table-data {
+    transition: 300ms;
+}
+
+.table-head {
+    height: 131px;
+    width: 326px;
+}
+
+.btn-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-wrapper span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fff;
+}
+
+.table-head td.table-data-split {
+    background-color: transparent;
+    background-image: url(../assets/img/top.svg), url(../assets/img/bottom.svg);
+    background-color: transparent;
+    background-size: 93%;
+    background-position: top right, left bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.btn {
+    margin: 0 auto;
+}
+
+/* section gallery */
+.gallery .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gallery-img {
+    width: 956px;
+}
+
+.gallery__header {
+    margin-top: 96px;
+    margin-bottom: 64px;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second__swiper {
+    width: 100%;
+    max-width: 446px;
+}
+
+.gallery__slide {
+    height: 529px;
+    padding: 73px 83px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+
+    /* Тень */
+    box-shadow: 0px 8px 24px 0px rgba(129, 135, 189, 0.15);
+    background: radial-gradient(72.11% 44.18% at 50% 94%, rgb(164, 10, 121), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        ,
+        radial-gradient(45.8% 43.84% at 5% 4%, rgb(0, 141, 243), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        ,
+        radial-gradient(66.53% 60.61% at 98% 1%, rgb(220, 24, 200), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        , rgba(22, 43, 237, 0.5);
+}
+
+.slider__navigation {
+    position: absolute;
+    left: 150px;
+    right: 172px;
+    bottom: 72px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    position: static;
+}
+
+.swiper-pagination-current,
+.swiper-pagination {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: #fff;
+}
+
+.swiper-pagination-total {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    color: #fff;
+}
+
+.s-button-prev {
+    bottom: 40px;
+    z-index: 5;
+    left: 40px;
+}
+
+.s-button-prev:hover,
+.s-button-next:hover {
+    cursor: pointer;
+}
+
+.s-button-next {
+    z-index: 5;
+    bottom: 40px;
+    right: 40px;
+}
+
+.slide-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.slide-text {
+    max-width: 285px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118%;
+    color: #fff;
+}
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* section contacts */
+.contacts .wrapper {
+    align-items: center;
+    margin-top: 96px;
+    gap: 39px;
+}
+
+.about-header {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 118%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contacts__header {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.contacts__list {
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 318px;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118%;
+    color: #fff;
+}
+
+.adress {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.tel {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.contacts__social {
+    gap: 16px;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.contacts__map {
+    position: relative;
+    width: 100%;
+}
+
+.label {
+    position: absolute;
+    bottom: 110px;
+    right: 297px;
+}
+
+/* footer */
+.footer {
+    height: 111px;
+    width: 100%;
+    margin-top: 64px;
+    /* Тень */
+    box-shadow: 0px 8px 24px 0px rgba(129, 135, 189, 0.15);
+    background: radial-gradient(73% 44.18% at 50% 94%, rgb(164, 10, 121), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        ,
+        radial-gradient(64.01% 43.84% at 5% 4%, rgb(0, 141, 243), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        ,
+        radial-gradient(107% 60.61% at 98% 1%, rgb(220, 24, 200), rgba(0, 0, 0, 0) 100%)
+        /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */
+        , rgba(22, 43, 237, 0.5);
+    position: relative;
+}
+
+.footer_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: rgba(199, 199, 199, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
