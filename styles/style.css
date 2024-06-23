@@ -300,7 +300,7 @@ body {
     line-height: 118%;
     color: #fff;
     opacity: 0.7;
-    background-image: url(../assets/icons/Arrow\2svg);
+    background-image: url(../assets/icons/Arrow\ 2.svg);
     background-repeat: no-repeat;
     background-position: right;
     padding-right: 32px;
@@ -308,7 +308,7 @@ body {
 
 .gaming__items:hover {
     color: var(--aktivnyy);
-    background-image: url(../assets/icons/Arrow\1svg);
+    background-image: url(../assets/icons/Arrow\ 1.svg);
 }
 
 .main__swiper {
@@ -319,7 +319,7 @@ body {
 
 .gaming__items_active {
     color: var(--aktivnyy);
-    background-image: url(../assets/icons/Arrow\1svg);
+    background-image: url(../assets/icons/Arrow\ 1.svg);
 }
 
 .slider-img {
